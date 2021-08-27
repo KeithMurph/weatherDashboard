@@ -40,6 +40,7 @@ $(document).ready(function () {
             $("#temperature").text(temp.toFixed(2) + "°F");
             $("#humidity").text(json.main.humidity + "%");
             $("#windspeed").text(windspeed.toFixed(2) + " " + "mph");
+            $("#uvIndex").text(uvi.toFixed(2))
         });
     }
 
