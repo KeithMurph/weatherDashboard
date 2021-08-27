@@ -1,0 +1,21 @@
+* {
+    background-color: lightblue;
+}
+
+header {
+    display: flex;
+    
+    background: linear-gradient(90deg, rgb(138, 138, 216) 0%, rgb(4, 4, 71) 100%);
+   justify-content: center;
+  
+    min-height: 5rem;
+}
+
+.title {
+    display: flex;
+    align-content: center;
+    color: wheat;
+    background: transparent;
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
