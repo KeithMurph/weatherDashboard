@@ -1,6 +1,6 @@
 
 #  Weather Dashboard
-
+<img src="https://img.icons8.com/doodle/192/000000/apple-weather.png"/>
 Deployed Link - https://keithmurph.github.io/weatherDashboard/
 
  ## License  MIT
