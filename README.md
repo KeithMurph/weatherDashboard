@@ -13,6 +13,7 @@ Calls on the OpenWeather API to produce a 5 day forecast for searched city
 ![Screenshot 2021-08-28 014834](https://user-images.githubusercontent.com/85463607/131212444-ef52cdeb-9c18-49e4-b5a9-c7ae60a5805c.png)
 
 
+<img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/>  <img src="https://img.icons8.com/color/48/000000/html-5--v2.png"/>  <img src="https://img.icons8.com/color/48/000000/css3.png"/>
  ## Table of Contents
  - [Installation](#howToInstall)
  - [Usage](#usage)
