@@ -1,5 +1,6 @@
-* {
-    background-color: lightblue;
+
+body{
+    background: linear-gradient(90deg, rgb(52, 52, 105) 0%, rgb(16, 16, 82) 100%);
 }
 
 header {
@@ -9,6 +10,7 @@ header {
    justify-content: center;
   
     min-height: 5rem;
+    border-bottom: groove 25px rgb(138, 138, 216);
 }
 
 .title {
@@ -18,4 +20,80 @@ header {
     background: transparent;
     font-size: 3rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+#currentWeather {
+
+    background: rgb(182, 176, 233);
+    border: groove 15px  rgb(138, 138, 216);
+}
+
+
+#searchBox {
+
+    background: rgb(182, 176, 233);
+    border: groove 15px  rgb(138, 138, 216);
+}
+
+#fiveDay {
+
+    background: rgb(182, 176, 233);
+    border: groove 15px  rgb(138, 138, 216);
+   
+}
+
+
+#clear-history {
+    background: wheat;
+    color: black;
+    border:  groove 3px rgb(4, 4, 71);
+}
+
+#submit-city {
+    background: wheat;
+    color: black;
+    border:  groove 3px rgb(4, 4, 71);
+
+}
+
+#city {
+
+   
+    color: black;
+    border:  groove 3px rgb(4, 4, 71);
+}
+
+#dayOne {
+    background: wheat;
+   
+}
+
+#dayTwo {
+    background: wheat;
+    
+}
+
+#dayThree {
+    background: wheat;
+    
+}
+
+#dayFour {
+    background: wheat;
+
+}
+#dayFive {
+    background: wheat;
+   
+}
+
+
+#cityWeather{
+
+    background: wheat ;
+}
+
+#search-history {
+    color: rgb(138, 138, 216);
 }

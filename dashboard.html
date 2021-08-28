@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,10 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/jpg" href="https://i.postimg.cc/HWwMM6GN/Screenshot-2021-08-28-002113.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <title>Document</title>
+    <title>Weather Dashboard</title>
 </head>
+
+
 
 <body>
     
@@ -20,90 +22,100 @@
     <header>
         <h1 class="title">Weather Dashboard</h1>
     </header>
+    <br>
+    <br>
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="body">
         <div class="row justify-content-around">
-            <div class="col-3 card bg-light mt-2">
+            <div class="col-3 card  mt-2" id="searchBox">
                 <div class="form-inline mt-3">
                     <input class="ml-5" id="city" type="text" placeholder="Search">
-                    <button class="btn btn-primary ml-5" id="submit-city" type="submit">Search</button>
+                    <button class="btn btn ml-5" id="submit-city" type="submit">Search</button>
                 </div>
 
                 <ul class="mr-5 mt-2" id="search-history">
         
                 </ul>
 
-                <button  id="clear-history">Clear History</button>
+                <button  class="btn-" id="clear-history">Clear History</button>
             </div>
+
+
+            
             <div class="col-7 mt-4">
-                <div class="row" id="current-weather" >
+                <div class="row" id="currentWeather" >
                     <div class="col-7" >
                         
-                        <h3><span id = "current-city"></span><img id="weather-img" src=""></h3> 
+                        <h1 class="text-center"><span id = "current-city"></span><img id="weather-img" src=""></h1> 
                         
-                    
+                    <div class="col-7 mt-4" id="cityWeather">
                         <p>Temperature: <span id="temperature"></span></p>
                         <p>Humidity: <span id="humidity"></span></p>
                         <p>Wind Speed: <span id="windspeed"></span></p>
-                        <p>UV Index: <span id="uvIndex"></span></p>
-                        
+                    </div>
                     </div>
 
                 </div>
+                <br>
+              
                 
+
                 
-                    
-                <h3 class="mt-5 mb-5">5 Day Forecast: </h3>
-                    
+               <div id="fiveDay">     
+                   <div id="fiveHeader">
+                <h1 class="mt-5 mb-5 text-center" >5 Day Forecast: </h1>
+                   </div>
                        <div class="card-deck">
-                        <div class="card bg-primary">
-                            <div id="day-1" class="card-body p-2">
+                        <div class="card" id="dayOne">
+                            <div id="day-1" class="card-body">
                                     <h6 class="card-date"></h6>
                                     <img class = "weather-icon">
                                     <p class = "weather-temp"></p>
                                     <p class = "weather-humidity"></p>
-                                    <p class= "wind-speed"></p>
 
                             </div>
                         </div>
-                        <div class="card bg-primary">
-                            <div id="day-2" class="card-body p-2">
+                        <div class="card" id="dayTwo">
+                            <div id="day-2" class="card-body">
                                     <h6 class="card-date"></h6>
                                     <img class = "weather-icon">
                                     <p class = "weather-temp"></p>
                                     <p class = "weather-humidity"></p>
-                                   <p class= "wind-speed"></p> 
+
                             </div>
                         </div>
-                        <div class="card bg-primary">
+                        <div class="card" id="dayThree">
                             <div id="day-3" class="card-body p-2">
                                     <h6 class="card-date"></h6>
                                     <img class = "weather-icon">
                                     <p class = "weather-temp"></p>
                                     <p class = "weather-humidity"></p>
-                                    <p class= "wind-speed"></p> 
+
                             </div>
 
                         </div>
-                        <div class="card bg-primary">
+                        <div class="card" id="dayFour">
                             <div id="day-4" class=" card-body p-2">
                                     <h6 class="card-date"></h6>
                                     <img class = "weather-icon">
                                     <p class = "weather-temp"></p>
                                     <p class = "weather-humidity"></p>
-                                    <p class= "wind-speed"></p> 
+
                             </div>
                         </div>
-                        <div class="card bg-primary">
+                        <div class="card" id="dayFive">
                             <div id="day-5" class="card-body p-2">
                                     <h6 class="card-date"></h6>
                                     <img class = "weather-icon">
                                     <p class = "weather-temp"></p>
                                     <p class = "weather-humidity"></p>
-                                    <p class= "wind-speed"></p> 
-                                </div>
+                            </div>
                         </div>
                         </div>
+
+                        <br>
+                       
+
                     
                 </div>
                 
@@ -117,7 +129,7 @@
    
 
 
-</body>   
+</body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="dashboard.js"></script>
 </html>
